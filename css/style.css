@@ -1,0 +1,107 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Section Heading */
+.section-heading{
+    color:var(--bs-cyan);
+}
+
+/*  Navbar */
+nav{
+    background:#ffa !important;
+    box-shadow: 1px 1px 2px #444;
+}
+
+nav .navbar-brand{
+    color: var(--bs-cyan) !important;
+}
+
+.navbar-nav .nav-link{
+    font-size: 18px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.navbar-toggler{
+    outline: none!important;
+    padding: none!important;
+}
+
+/* Carousel */
+.carousel-inner .carousel-item{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.carousel-inner .carousel-item::before{
+    content: '';
+    background-color:rgba(12,11,10,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.carousel-inner .carousel-caption{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    top: 40%;
+    left: 0;
+    right: 0;
+}
+
+.carousel-inner .carousel-caption span{
+    color: var(--bs-cyan);
+}
+
+.carousel-inner .carousel-caption h2{
+    color: #2df717;
+    font-size: 42px;
+    font-weight: 600px;
+    width: 80%;
+    margin:0px auto 10px auto;
+}
+
+.carousel-inner .carousel-caption p{
+    font-size: 18px;
+    width: 80%;
+    margin: 0px auto 20px auto;
+}
+
+.card-img-top {
+    height: 300px;
+  }
+
+@media (max-width:768px) {
+    .carousel-inner .carousel-caption h2{
+        font-size: 38px;
+    }
+}
+
+@media (max-width:577px) {
+    .carousel-inner .carousel-caption h2{
+        font-size: 25px;
+    }
+    .carousel-inner .carousel-caption p{
+        font-size: 15px;
+    }
+}
+
+/* Course */
+#course .box{
+    padding: 10px 10px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#course .box img{
+    padding: 10px 10px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
